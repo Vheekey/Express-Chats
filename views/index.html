@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Express Chats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="text-danger text-center">Express Chatroom</h1>
+
+            <div class="row chatting">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5 " >
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Username"/>
+                    </div>
+                    <div class="col-md-1">
+                            <button type="button" id="changeUsername" class="btn btn-sm btn-primary">Change</button>
+                    </div>
+                    <div class="col-md-2"></div>
+            </div> 
+            <span id="feedback"></span>   
+
+        <div class="chat-area border border-primary rounded" id="chatroom">
+                
+        </div>
+        <div class=" border border-primary">
+                <div class="row justify-content-center chatting">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+                            <input type="text"  name="message" id="message" class="form-control" placeholder="type your message"/>
+                            
+                    </div>
+                    <div class="col-md-2">
+                            <button type="submit" class="btn btn-sm btn-dark" id="sendMessage"> Send </button>
+                    </div>
+                    <div class="col-2"></div>
+                        
+                </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="assets/js/chat.js"></script>
+</body>
+</html>

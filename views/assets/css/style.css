@@ -1,0 +1,19 @@
+.chat-area{
+    margin-top: 2%;
+    min-height: 500px;
+
+}
+
+.chatting{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.mess{
+    background-color: aqua;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid black;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
